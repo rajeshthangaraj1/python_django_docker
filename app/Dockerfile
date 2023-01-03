@@ -27,8 +27,8 @@ COPY . .
 
 # run entrypoint.sh
 ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
-# EXPOSE port 8000 to allow communication to/from server
-EXPOSE 8000
+# # EXPOSE port 8000 to allow communication to/from server
+# EXPOSE 8000
 
-# CMD specifcies the command to execute to start the server running.
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]
+# # CMD specifcies the command to execute to start the server running.
+# CMD ["python", "manage.py", "runserver", "0.0.0.0:8001"]

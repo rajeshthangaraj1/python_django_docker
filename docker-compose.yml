@@ -17,9 +17,9 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
-      - POSTGRES_USER=dockertestinguser
-      - POSTGRES_PASSWORD=dockertestinguser@12345622
-      - POSTGRES_DB=dockertesting
+      - POSTGRES_USER=dockerpostdbuser
+      - POSTGRES_PASSWORD=123dockertestinguser@12345622
+      - POSTGRES_DB=dockerpostdb
 
 volumes:
   postgres_data:
