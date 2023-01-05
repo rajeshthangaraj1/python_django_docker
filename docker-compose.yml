@@ -20,6 +20,8 @@ services:
       - POSTGRES_USER=dockerpostdbuser
       - POSTGRES_PASSWORD=123dockertestinguser@12345622
       - POSTGRES_DB=dockerpostdb
+      - POSTGRES_HOST=localhost
+      - POSTGRES_PORT=5432
 
 volumes:
   postgres_data:
