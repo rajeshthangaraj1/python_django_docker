@@ -85,7 +85,7 @@ DATABASES = {
         'NAME': 'dockerpostdb',
         'USER': 'dockerpostdbuser',
         'PASSWORD': '123dockertestinguser@12345622',
-        'HOST': 'localhost',
+        'HOST': 'db',
         'PORT': '5432',
     }
 }
