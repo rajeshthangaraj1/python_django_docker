@@ -82,9 +82,9 @@ WSGI_APPLICATION = 'hello_django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dockerpostdb',
-        'USER': 'dockerpostdbuser',
-        'PASSWORD': '123dockertestinguser@12345622',
+        'NAME': 'dockertesting',
+        'USER': 'dockertestinguser',
+        'PASSWORD': 'dockertestinguser@12345622',
         'HOST': 'db',
         'PORT': '5432',
     }
