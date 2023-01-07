@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   web:
     build:
@@ -30,7 +29,6 @@ services:
       - 1337:80
     depends_on:
       - web
-
 volumes:
   postgres_data:
   static_volume:
