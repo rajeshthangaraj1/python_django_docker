@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
 
-
+@ensure_csrf_cookie
 def image_upload(request):
     if request.method == "POST" and request.FILES["image_file"]:
         image_file = request.FILES["image_file"]
