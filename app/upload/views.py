@@ -1,8 +1,6 @@
 from django.shortcuts import render
 from django.core.files.storage import FileSystemStorage
-# from django.views.decorators.csrf import csrf_exempt
 
-# @csrf_exempt
 def image_upload(request):
     if request.method == "POST" and request.FILES["image_file"]:
         image_file = request.FILES["image_file"]
