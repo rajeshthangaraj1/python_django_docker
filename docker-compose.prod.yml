@@ -4,12 +4,12 @@ services:
     build:
       context: ./app
       dockerfile: Dockerfile.prod
-    command: gunicorn hello_django.wsgi:application --bind 0.0.0.0:8002
+    command: gunicorn hello_django.wsgi:application --bind 0.0.0.0:8001
     volumes:
       - static_volume:/home/app/web/staticfiles
       - media_volume:/home/app/web/mediafiles
     expose:
-      - 8002
+      - 8001
     env_file:
       - ./.env.prod
     depends_on:
